@@ -80,3 +80,17 @@
   .waitlist-card{padding:24px 18px}
   .choice-grid{grid-template-columns:1fr}
 }
+
+.form-feedback{display:grid;gap:10px}
+.next-steps{
+  display:grid;
+  gap:4px;
+  padding:14px 16px;
+  border:1px solid rgba(38,114,75,.22);
+  border-radius:12px;
+  background:rgba(38,114,75,.07);
+  color:#3d5146;
+  font-size:12px;
+  line-height:1.5
+}
+.next-steps strong{color:#26724b;font-size:13px}

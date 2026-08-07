@@ -33,3 +33,10 @@ Use **DNS only** while GitHub verifies the custom domain.
 ## Beta waitlist form
 
 The homepage includes a beta waitlist form. See `BETA_FORM_SETUP.md` for the one-time form endpoint setup.
+
+
+## Waitlist confirmation behavior
+
+After a successful beta signup, the form now confirms the submission and tells the user that Mind2Skin will review the request and contact them if a testing spot becomes available for their role and platform.
+
+The Privacy Policy has also been updated to explicitly cover the beta waitlist fields collected and Formspree's role as the submission processor.
