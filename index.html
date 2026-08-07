@@ -24,7 +24,7 @@
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="#how-it-works">How It Works</a><a href="#features">Features</a><a href="#clients">For Clients</a><a href="#artists">For Artists</a><a href="#faq">FAQ</a>
-      <a class="nav-cta" href="mailto:info@mind2skin.app?subject=Mind2Skin%20Beta%20Interest">Join the Beta</a>
+      <a class="nav-cta" href="#beta">Join the Beta</a>
     </nav>
   </div>
 </header>
@@ -35,7 +35,7 @@
       <p class="eyebrow">From Imagination to Ink</p>
       <h1>Bring your tattoo idea to life.</h1>
       <p class="hero-text">Mind2Skin guides you from the first spark of an idea to a clearer design concept, the right artist match, and an organized appointment experience.</p>
-      <div class="hero-actions"><a class="button button-primary" href="mailto:info@mind2skin.app?subject=Join%20the%20Mind2Skin%20Beta">Join the Beta</a><a class="button button-secondary" href="#how-it-works">See How It Works</a></div>
+      <div class="hero-actions"><a class="button button-primary" href="#beta">Join the Beta</a><a class="button button-secondary" href="#how-it-works">See How It Works</a></div>
       <p class="release-note">Private preview testing is underway for iPhone and Android.</p>
     </div>
     <div class="hero-media"><div class="image-frame"><img src="assets/mind2skin-hero-web.jpg" alt="Mind2Skin concept artwork showing imagination flowing into tattoo art"></div></div>
@@ -70,8 +70,107 @@
   <div class="audience-card dark-card"><p class="card-label">Artist Preview</p><h3>Review requests with better context.</h3><p>See the client’s concept direction, preferred placement, and appointment request before deciding how to proceed.</p></div>
   <div class="audience-copy"><p class="eyebrow eyebrow-light">For Tattoo Artists</p><h2>Spend less time decoding incomplete requests.</h2><p>Mind2Skin gives artists a more structured starting point while preserving the artist’s creative authority.</p><ul class="check-list light-list"><li>Review structured client requests</li><li>Confirm or decline appointment interest</li><li>See concept details before the consultation</li><li>Keep early communication more organized</li></ul></div>
 </div></section>
-<section class="section beta-section"><div class="container beta-card"><div><p class="eyebrow">Now in Private Preview</p><h2>Help shape the next version of Mind2Skin.</h2><p>We are collecting feedback from early testers on navigation, wording, workflow, and the overall client and artist experience.</p></div><a class="button button-primary" href="mailto:info@mind2skin.app?subject=Mind2Skin%20Beta%20Tester">Request Beta Access</a></div></section>
-<section id="faq" class="section"><div class="container narrow"><div class="section-heading"><p class="eyebrow">Frequently Asked Questions</p><h2>What to know about Mind2Skin.</h2></div>
+<section id="beta" class="section beta-section">
+      <div class="container beta-layout">
+        <div class="beta-intro">
+          <p class="eyebrow">Now in Private Preview</p>
+          <h2>Help shape the next version of Mind2Skin.</h2>
+          <p>
+            Join the beta waitlist to be considered for future preview access.
+            We are looking for both tattoo clients and tattoo artists using iPhone and Android.
+          </p>
+          <div class="beta-points">
+            <span>✓ Early product access</span>
+            <span>✓ Client and artist testing</span>
+            <span>✓ iPhone and Android</span>
+          </div>
+        </div>
+
+        <div class="waitlist-card">
+          <form
+            id="beta-form"
+            class="waitlist-form"
+            action="https://formspree.io/f/mvkpgjrw"
+            method="POST"
+            data-waitlist-form
+          >
+            <input type="hidden" name="_subject" value="New Mind2Skin Beta Waitlist Signup">
+            <input type="hidden" name="source" value="mind2skin.app">
+
+            <div class="form-field">
+              <label for="beta-name">Name</label>
+              <input
+                id="beta-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="beta-email">Email</label>
+              <input
+                id="beta-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+
+            <fieldset class="form-field">
+              <legend>I am a...</legend>
+              <div class="choice-grid">
+                <label class="choice">
+                  <input type="radio" name="user_type" value="Tattoo Client" required>
+                  <span>Tattoo Client</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="user_type" value="Tattoo Artist" required>
+                  <span>Tattoo Artist</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-field">
+              <legend>Platform</legend>
+              <div class="choice-grid">
+                <label class="choice">
+                  <input type="radio" name="platform" value="iPhone" required>
+                  <span>iPhone</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="platform" value="Android" required>
+                  <span>Android</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <label class="consent">
+              <input type="checkbox" name="beta_consent" value="Yes" required>
+              <span>
+                I agree that Mind2Skin may contact me about beta testing and product updates.
+                See the <a href="privacy.html">Privacy Policy</a>.
+              </span>
+            </label>
+
+            <button class="button button-primary form-submit" type="submit" data-submit-button>
+              Join the Waitlist
+            </button>
+
+            <p class="form-status" aria-live="polite" data-form-status></p>
+            <p class="form-note">
+              Beta participation is limited and joining the waitlist does not guarantee access.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section"><div class="container narrow"><div class="section-heading"><p class="eyebrow">Frequently Asked Questions</p><h2>What to know about Mind2Skin.</h2></div>
   <div class="faq-list">
     <details><summary>Is Mind2Skin available in the App Store or Google Play?</summary><p>Not yet. Mind2Skin is currently being tested through private preview builds for iPhone and Android.</p></details>
     <details><summary>Does Mind2Skin create the final tattoo design?</summary><p>No. Mind2Skin helps organize and communicate the concept. The tattoo artist remains responsible for the final artwork, suitability, and execution.</p></details>

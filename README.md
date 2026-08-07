@@ -28,3 +28,8 @@ Add the GitHub Pages records:
 - `CNAME` `www` → `lewiskd26.github.io`
 
 Use **DNS only** while GitHub verifies the custom domain.
+
+
+## Beta waitlist form
+
+The homepage includes a beta waitlist form. See `BETA_FORM_SETUP.md` for the one-time form endpoint setup.
